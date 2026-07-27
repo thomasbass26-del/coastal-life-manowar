@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Man O' War &amp; Pine Lakes — Golf Home Guide | The Coastal Life Team of Myrtle Beach</title>
+<meta name="description" content="Homes on two Myrtle Beach golf courses: Pine Lakes, opened 1927, and Man O' War, opened 1996. Get the free buyer's guide covering price ranges, HOA, course access, and what's for sale.">
+<meta property="og:title" content="Live on the Granddaddy. Or live on the lake.">
+<meta property="og:description" content="Man O' War and Pine Lakes golf home guide from The Coastal Life Team of Myrtle Beach at Coldwell Banker Sea Coast Advantage.">
+<meta property="og:image" content="https://thomasbass26-del.github.io/coastal-life-manowar/img/og.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thomasbass26-del.github.io/coastal-life-manowar/">
+<link rel="canonical" href="https://thomasbass26-del.github.io/coastal-life-manowar/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Libre+Franklin:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<script>
+/* ============================================================
+   CONFIG — The Coastal Life Team of Myrtle Beach
+
+   leadEndpoint MUST be this team's own CRM intake.
+   Do NOT reuse the hook from the other community pages in this
+   repo — that one routes to a different team's pipeline.
+   ============================================================ */
+window.CLT_CONFIG = {
+  leadEndpoint: "PASTE_COASTAL_LIFE_TEAM_ENDPOINT_HERE",
+
+  // Flows through so this page stays attributable.
+  leadSource: "man-o-war-pine-lakes-landing",
+  team:       "coastal-life-team",
+
+  // Team contact — REPLACE BEFORE LAUNCH
+  phone:      "843-555-0100",
+  phoneHref:  "+18435550100",
+  email:      "hello@thecoastallifeteam.com",
+
+  // Leave false until the endpoint above is real. Logs payload to console instead of sending.
+  live: false
+};
+</script>
+
+<style>
+/* ============================================================
+   TOKENS
+   Navy + champagne are the Coldwell Banker Sea Coast anchors.
+   Water-teal marks Man O' War. Fairway-green marks Pine Lakes.
+   Card stock is the scorecard panel only — never a page ground.
+   ============================================================ */
+:root{
+  --ink:        #001E60;
+  --deep:       #000C26;
+  --deeper:     #00081A;
+  --gold:       #C1A163;
+  --gold-soft:  #E0CBA0;
+  --card:       #EFE9DB;
+  --card-line:  #C9BFA8;
+  --card-ink:   #1C1A15;
+  --water:      #2C7A99;
+  --fairway:    #2F5D46;
+  --mist:       rgba(255,255,255,.62);
+  --hair:       rgba(224,203,160,.24);
+
+  --display: "Source Serif 4", Georgia, serif;
+  --body:    "Libre Franklin", system-ui, -apple-system, sans-serif;
+  --data:    "JetBrains Mono", ui-monospace, Menlo, monospace;
+
+  --gut: clamp(20px, 5vw, 64px);
+  --max: 1180px;
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+body{
+  margin:0; background:var(--deep); color:#fff;
+  font-family:var(--body); font-weight:300; font-size:17px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+img,video{ display:block; max-width:100%; }
+a{ color:inherit; }
+:focus-visible{ outline:2px solid var(--gold-soft); outline-offset:3px; border-radius:2px; }
+
+.wrap{ width:100%; max-width:var(--max); margin:0 auto; padding-inline:var(--gut); }
+
+/* Eyebrow: a yardage plate. Small, monospaced, tracked wide. */
+.plate{
+  font-family:var(--data); font-size:11px; font-weight:500;
+  letter-spacing:.22em; text-transform:uppercase; color:var(--gold);
+  display:flex; align-items:center; gap:12px; margin:0 0 20px;
+}
+.plate::after{ content:""; height:1px; flex:1; background:var(--hair); max-width:120px; }
+
+h1,h2,h3{ font-family:var(--display); font-weight:700; letter-spacing:-.02em; line-height:1.05; margin:0; }
+h2{ font-size:clamp(30px,4.4vw,50px); }
+h3{ font-size:clamp(20px,2.4vw,26px); letter-spacing:-.01em; }
+p{ margin:0 0 1.1em; }
+.lede{ font-size:clamp(17px,1.6vw,19.5px); color:var(--mist); max-width:62ch; }
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:10px;
+  font-family:var(--body); font-size:14px; font-weight:600; letter-spacing:.06em;
+  text-transform:uppercase; text-decoration:none; cursor:pointer;
+  padding:16px 30px; border-radius:2px; border:1px solid transparent;
+  transition:background .22s ease, color .22s ease, border-color .22s ease, transform .22s ease;
+}
+.btn--gold{ background:var(--gold); color:var(--deep); }
+.btn--gold:hover{ background:var(--gold-soft); transform:translateY(-1px); }
+.btn--ghost{ border-color:rgba(255,255,255,.34); color:#fff; background:transparent; }
+.btn--ghost:hover{ border-color:var(--gold); color:var(--gold-soft); }
+
+/* ---------- Masthead ---------- */
+.masthead{
+  position:absolute; inset:0 0 auto 0; z-index:6; padding-block:22px;
+  display:flex; align-items:center;
+}
+.masthead .wrap{ display:flex; align-items:center; justify-content:space-between; gap:20px; }
+.lockup{ display:flex; flex-direction:column; gap:4px; text-decoration:none; }
+.lockup b{
+  font-family:var(--display); font-size:19px; font-weight:700; letter-spacing:.005em;
+}
+.lockup span{
+  font-family:var(--data); font-size:9.5px; letter-spacing:.2em;
+  text-transform:uppercase; color:var(--gold);
+}
+.masthead-tel{
+  font-family:var(--data); font-size:12.5px; letter-spacing:.1em;
+  text-decoration:none; color:var(--mist);
+}
+.masthead-tel:hover{ color:var(--gold-soft); }
+
+/* ---------- Hero ---------- */
+.hero{ position:relative; min-height:min(94svh,860px); display:flex; align-items:flex-end; overflow:hidden; }
+.hero-media{ position:absolute; inset:0; z-index:0; }
+.hero-media video,.hero-media img{ width:100%; height:100%; object-fit:cover; }
+.hero-media::after{
+  content:""; position:absolute; inset:0;
+  background:
+    linear-gradient(to top, var(--deep) 2%, rgba(0,12,38,.86) 34%, rgba(0,12,38,.30) 68%, rgba(0,12,38,.55) 100%),
+    linear-gradient(to right, rgba(0,30,96,.55), rgba(0,12,38,.1) 62%);
+}
+.hero-body{ position:relative; z-index:2; padding-block:clamp(60px,11vh,120px); width:100%; }
+.hero h1{ font-size:clamp(40px,7.4vw,86px); max-width:15ch; text-wrap:balance; }
+.hero h1 em{ font-style:italic; font-weight:400; color:var(--gold-soft); }
+.hero .lede{ margin-top:26px; }
+.hero-cta{ display:flex; flex-wrap:wrap; gap:14px; margin-top:34px; }
+
+/* Course flags — the two subjects, named at the top of the page. */
+.flags{ display:flex; flex-wrap:wrap; gap:22px; margin-bottom:26px; }
+.flag{
+  font-family:var(--data); font-size:11px; letter-spacing:.16em; text-transform:uppercase;
+  display:flex; align-items:center; gap:9px; color:rgba(255,255,255,.8);
+}
+.flag i{ width:9px; height:9px; border-radius:50%; display:block; }
+.flag--water i{ background:var(--water); box-shadow:0 0 0 4px rgba(44,122,153,.22); }
+.flag--fair  i{ background:var(--fairway); box-shadow:0 0 0 4px rgba(47,93,70,.24); }
+
+/* ---------- Sections ---------- */
+.sec{ padding-block:clamp(72px,10vw,124px); position:relative; }
+.sec--card{ background:var(--card); color:var(--card-ink); }
+.sec--deep{ background:var(--deeper); }
+.sec--card .plate{ color:#8A7440; }
+.sec--card .plate::after{ background:var(--card-line); }
+.sec--card .lede{ color:rgba(28,26,21,.72); }
+
+.sec-head{ max-width:70ch; margin-bottom:clamp(38px,5vw,58px); }
+.sec-head p{ margin-top:20px; }
+
+/* ---------- THE SCORECARD (signature) ---------- */
+.card-frame{
+  border:1px solid var(--card-line); background:#F7F3EA;
+  box-shadow:0 1px 0 #fff inset, 0 22px 44px -30px rgba(0,12,38,.5);
+}
+.card-top{
+  display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap;
+  padding:18px 22px; border-bottom:1px solid var(--card-line); background:#F1EBDE;
+}
+.card-top b{ font-family:var(--display); font-size:17px; font-weight:700; }
+.card-top span{ font-family:var(--data); font-size:10.5px; letter-spacing:.18em; text-transform:uppercase; color:#8A7440; }
+
+.scorecard{ width:100%; border-collapse:collapse; font-family:var(--data); font-size:13.5px; }
+.scorecard th,.scorecard td{ padding:14px 16px; text-align:left; border-bottom:1px solid var(--card-line); vertical-align:top; }
+.scorecard thead th{
+  font-size:10.5px; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+  color:#6E5C33; background:#F1EBDE; white-space:nowrap;
+}
+.scorecard tbody th{
+  font-family:var(--display); font-size:17px; font-weight:700; letter-spacing:-.01em;
+  width:24%; white-space:nowrap; position:relative; padding-left:26px;
+}
+.scorecard tbody th::before{
+  content:""; position:absolute; left:16px; top:19px; width:4px; height:calc(100% - 34px); min-height:16px; border-radius:2px;
+}
+.row-fair  th::before{ background:var(--fairway); }
+.row-water th::before{ background:var(--water); }
+.scorecard tbody th small{
+  display:block; font-family:var(--data); font-size:10px; font-weight:400;
+  letter-spacing:.14em; text-transform:uppercase; color:#8A7440; margin-top:6px;
+}
+.scorecard tbody tr:last-child th,
+.scorecard tbody tr:last-child td{ border-bottom:none; }
+.num{ font-variant-numeric:tabular-nums; font-weight:500; }
+
+.card-note{
+  padding:20px 22px; background:#F1EBDE; border-top:1px solid var(--card-line);
+  font-family:var(--body); font-size:14.5px; line-height:1.6; color:rgba(28,26,21,.76);
+}
+.card-note strong{ font-weight:600; color:var(--card-ink); }
+
+/* Mobile: the table becomes two stacked cards, keeps the labels. */
+@media (max-width:760px){
+  .scorecard thead{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
+  .scorecard,.scorecard tbody,.scorecard tr,.scorecard th,.scorecard td{ display:block; width:auto; }
+  .scorecard tbody tr{ border-bottom:1px solid var(--card-line); padding-bottom:8px; }
+  .scorecard tbody tr:last-child{ border-bottom:none; }
+  .scorecard tbody th{ width:auto; border-bottom:none; padding-bottom:6px; }
+  .scorecard td{ border-bottom:none; padding:6px 16px 6px 26px; display:flex; gap:12px; justify-content:space-between; }
+  .scorecard td::before{
+    content:attr(data-label); font-size:10px; letter-spacing:.14em; text-transform:uppercase;
+    color:#8A7440; flex:0 0 40%;
+  }
+}
+
+/* ---------- Two communities ---------- */
+.split{ display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:clamp(24px,3vw,40px); }
+.panel{ border:1px solid var(--hair); padding:clamp(28px,3.4vw,42px); position:relative; background:rgba(255,255,255,.018); }
+.panel::before{ content:""; position:absolute; left:0; top:0; width:100%; height:3px; }
+.panel--water::before{ background:var(--water); }
+.panel--fair::before{ background:var(--fairway); }
+.panel .plate{ margin-bottom:14px; }
+.panel h3{ margin-bottom:16px; }
+.panel p{ color:var(--mist); font-size:16px; }
+.asks{ list-style:none; margin:26px 0 0; padding:22px 0 0; border-top:1px solid var(--hair); }
+.asks li{ position:relative; padding-left:22px; margin-bottom:13px; font-size:15px; color:rgba(255,255,255,.78); }
+.asks li:last-child{ margin-bottom:0; }
+.asks li::before{
+  content:""; position:absolute; left:0; top:9px; width:7px; height:7px;
+  border:1px solid var(--gold); border-radius:50%;
+}
+
+/* ---------- Guide contents ---------- */
+.contents{ display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:2px; background:var(--hair); border:1px solid var(--hair); }
+.content-cell{ background:var(--deeper); padding:28px 26px; }
+.content-cell b{
+  display:block; font-family:var(--data); font-size:10.5px; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--gold); margin-bottom:12px;
+}
+.content-cell span{ font-family:var(--display); font-size:19px; font-weight:600; display:block; margin-bottom:9px; line-height:1.2; }
+.content-cell p{ font-size:14.5px; color:var(--mist); margin:0; }
+
+/* ---------- Form ---------- */
+.offer{ display:grid; grid-template-columns:1.05fr .95fr; gap:clamp(30px,4.5vw,64px); align-items:start; }
+@media (max-width:900px){ .offer{ grid-template-columns:1fr; } }
+
+.form-shell{ background:var(--card); color:var(--card-ink); padding:clamp(26px,3.2vw,38px); border-top:3px solid var(--gold); }
+.form-shell h3{ margin-bottom:8px; }
+.form-shell .sub{ font-size:14.5px; color:rgba(28,26,21,.68); margin-bottom:24px; }
+.field{ margin-bottom:16px; }
+.field label{
+  display:block; font-family:var(--data); font-size:10px; font-weight:500;
+  letter-spacing:.16em; text-transform:uppercase; color:#6E5C33; margin-bottom:7px;
+}
+.field input,.field select{
+  width:100%; font-family:var(--body); font-size:16px; color:var(--card-ink);
+  padding:13px 14px; border:1px solid var(--card-line); border-radius:2px;
+  background:#FCFAF5; transition:border-color .18s ease, box-shadow .18s ease;
+}
+.field input:focus,.field select:focus{
+  outline:none; border-color:var(--ink); box-shadow:0 0 0 3px rgba(0,30,96,.12);
+}
+.field-row{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+@media (max-width:480px){ .field-row{ grid-template-columns:1fr; gap:0; } }
+.form-shell .btn{ width:100%; background:var(--ink); color:#fff; margin-top:8px; }
+.form-shell .btn:hover{ background:#002B85; }
+.consent{ font-size:11.5px; line-height:1.55; color:rgba(28,26,21,.58); margin:16px 0 0; }
+.consent a{ color:#6E5C33; }
+.err{ color:#8C2A1E; font-size:13px; margin:12px 0 0; display:none; }
+.err.show{ display:block; }
+
+.thanks{ display:none; text-align:left; padding:14px 0; }
+.thanks.show{ display:block; }
+.thanks .mark{
+  width:44px; height:44px; border:1px solid var(--gold); border-radius:50%;
+  display:flex; align-items:center; justify-content:center; color:#6E5C33;
+  font-family:var(--data); font-size:19px; margin-bottom:18px;
+}
+.is-sent .form-live{ display:none; }
+
+/* ---------- Video modal ---------- */
+.modal{
+  position:fixed; inset:0; z-index:60; background:rgba(0,8,26,.94);
+  display:none; align-items:center; justify-content:center; padding:var(--gut);
+}
+.modal.open{ display:flex; }
+.modal-inner{ width:min(1080px,100%); }
+.modal video{ width:100%; border:1px solid var(--hair); background:#000; }
+.modal-close{
+  display:block; margin:0 0 14px auto; background:none; border:1px solid rgba(255,255,255,.3);
+  color:#fff; font-family:var(--data); font-size:11px; letter-spacing:.16em; text-transform:uppercase;
+  padding:9px 16px; cursor:pointer; border-radius:2px;
+}
+.modal-close:hover{ border-color:var(--gold); color:var(--gold-soft); }
+
+/* ---------- Footer ---------- */
+.foot{ background:var(--deeper); border-top:1px solid var(--hair); padding-block:52px; font-size:13px; color:rgba(255,255,255,.5); }
+.foot-top{ display:flex; flex-wrap:wrap; gap:26px; justify-content:space-between; align-items:flex-start; margin-bottom:32px; }
+.foot-brand b{ font-family:var(--display); font-size:18px; color:#fff; display:block; margin-bottom:6px; }
+.foot-brand span{ font-family:var(--data); font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:var(--gold); }
+.foot a{ color:rgba(255,255,255,.72); text-decoration:none; }
+.foot a:hover{ color:var(--gold-soft); }
+.legal{ border-top:1px solid var(--hair); padding-top:24px; font-size:11.5px; line-height:1.65; }
+.legal p{ margin:0 0 9px; }
+.eho{ display:inline-flex; align-items:center; gap:8px; font-family:var(--data); font-size:10px; letter-spacing:.14em; text-transform:uppercase; }
+
+/* ---------- Motion ---------- */
+.rise{ opacity:0; transform:translateY(16px); transition:opacity .7s ease, transform .7s ease; }
+.rise.in{ opacity:1; transform:none; }
+@media (prefers-reduced-motion:reduce){
+  html{ scroll-behavior:auto; }
+  .rise{ opacity:1; transform:none; transition:none; }
+  *{ animation-duration:.001ms !important; transition-duration:.001ms !important; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============ MASTHEAD ============ -->
+<header class="masthead">
+  <div class="wrap">
+    <!-- Swap this text lockup for the official CB Sea Coast Advantage logo file when you have it. -->
+    <a class="lockup" href="#top">
+      <b>The Coastal Life Team</b>
+      <span>Coldwell Banker Sea Coast Advantage</span>
+    </a>
+    <a class="masthead-tel" href="#" data-tel>Call</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-media">
+    <video id="ambient" class="hero-video" poster="img/poster.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
+  </div>
+
+  <div class="hero-body">
+    <div class="wrap">
+      <div class="flags rise">
+        <span class="flag flag--fair"><i></i>Pine Lakes &middot; 1927</span>
+        <span class="flag flag--water"><i></i>Man O' War &middot; 1996</span>
+      </div>
+
+      <h1 class="rise">Live on the Granddaddy.<br><em>Or live on the lake.</em></h1>
+
+      <p class="lede rise">
+        Sixty-nine years separate Myrtle Beach's first golf course from the one built inside
+        a hundred-acre lake. Both have homes for sale right now, and they suit very different
+        buyers. The guide breaks down price, HOA, course access, and what actually trades.
+      </p>
+
+      <div class="hero-cta rise">
+        <a class="btn btn--gold" href="#guide">Get the guide</a>
+        <button class="btn btn--ghost" id="playFilm" type="button">Watch the film &middot; 1:20</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCORECARD ============ -->
+<section class="sec sec--card">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <p class="plate">The card</p>
+      <h2>Read them side by side</h2>
+      <p>
+        Most golf-community pages sell you a lifestyle. This one starts with the numbers,
+        because the course itself is the thing you are buying next to, and the two are not
+        remotely alike.
+      </p>
+    </div>
+
+    <div class="card-frame rise">
+      <div class="card-top">
+        <b>Man O' War &amp; Pine Lakes</b>
+        <span>Myrtle Beach, Horry County, SC</span>
+      </div>
+
+      <table class="scorecard">
+        <thead>
+          <tr>
+            <th scope="col">Course</th>
+            <th scope="col">Opened</th>
+            <th scope="col">Architect</th>
+            <th scope="col">Par</th>
+            <th scope="col">Yards</th>
+            <th scope="col">Greens</th>
+            <th scope="col">To the ocean</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row-fair">
+            <th scope="row">Pine Lakes<small>&ldquo;The Granddaddy&rdquo;</small></th>
+            <td data-label="Opened" class="num">1927</td>
+            <td data-label="Architect">Robert White</td>
+            <td data-label="Par" class="num">70</td>
+            <td data-label="Yards" class="num">6,675</td>
+            <td data-label="Greens">Sunday ultradwarf bermuda</td>
+            <td data-label="To the ocean">Under a half mile</td>
+          </tr>
+          <tr class="row-water">
+            <th scope="row">Man O' War<small>Island greens</small></th>
+            <td data-label="Opened" class="num">1996</td>
+            <td data-label="Architect">Dan Maples</td>
+            <td data-label="Par" class="num">72</td>
+            <td data-label="Yards" class="num">6,967</td>
+            <td data-label="Greens">Crenshaw bentgrass</td>
+            <td data-label="To the ocean">About ten miles</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="card-note">
+        <strong>Two footnotes worth knowing.</strong>
+        Pine Lakes was designed by Robert White, the first president of the PGA of America, and
+        it is where a 1954 Time Inc. conference produced the idea for <em>Sports Illustrated</em>.
+        Man O' War is believed to be the only course in the world with back-to-back island greens,
+        the 14th and 15th, plus a par-4 ninth that sits on its own island.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMMUNITIES ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <p class="plate">Two addresses, two buyers</p>
+      <h2>Which one is actually yours</h2>
+    </div>
+
+    <div class="split">
+      <article class="panel panel--fair rise">
+        <p class="plate">Pine Lakes</p>
+        <h3>Established, walkable, close to the water</h3>
+        <p>
+          Pine Lakes sits between roughly 48th and 62nd Avenues North, less than half a mile
+          from the Atlantic. The streets were laid out around the original 1920s club, so the
+          lots are mature, the tree canopy is real, and you are minutes from the beach, the
+          Market Common, and the airport.
+        </p>
+        <ul class="asks">
+          <li>Mostly established single-family homes on established lots</li>
+          <li>In-town location, short drive to oceanfront and downtown</li>
+          <li>Renovation and rebuild activity is common here</li>
+          <li>Course is public; club access is arranged through the club directly</li>
+        </ul>
+      </article>
+
+      <article class="panel panel--water rise">
+        <p class="plate">Man O' War</p>
+        <h3>Newer build, water views, Carolina Forest corridor</h3>
+        <p>
+          Man O' War is off Highway 501 just west of the Intracoastal Waterway, in the Carolina
+          Forest corridor. Newer construction, wide streets, and a course whose defining feature
+          is water on every hole. If you want a lake or fairway view from a house built in the
+          last few decades, this is the side of town to look.
+        </p>
+        <ul class="asks">
+          <li>Newer single-family and villa product</li>
+          <li>Lake and fairway views are the premium here</li>
+          <li>Close to Carolina Forest schools, shopping, and Highway 31</li>
+          <li>Course is public; club access is arranged through the club directly</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GUIDE + FORM ============ -->
+<section class="sec sec--deep" id="guide">
+  <div class="wrap">
+    <div class="offer">
+
+      <div class="rise">
+        <p class="plate">The guide</p>
+        <h2>What's inside</h2>
+        <p class="lede" style="margin:20px 0 34px;">
+          A short PDF, written for buyers, not for search engines. No account, no drip
+          sequence you can't leave.
+        </p>
+
+        <div class="contents">
+          <div class="content-cell">
+            <b>01</b>
+            <span>Price bands</span>
+            <p>Current ranges by property type in each community, and what the spread between them has been doing.</p>
+          </div>
+          <div class="content-cell">
+            <b>02</b>
+            <span>HOA and fees</span>
+            <p>What is covered, what is not, and the questions to ask before you write an offer.</p>
+          </div>
+          <div class="content-cell">
+            <b>03</b>
+            <span>Course access</span>
+            <p>How play and membership actually work at each club, since neither is a private gated arrangement.</p>
+          </div>
+          <div class="content-cell">
+            <b>04</b>
+            <span>The view premium</span>
+            <p>What a fairway lot, a lake lot, and an interior lot have been worth relative to each other.</p>
+          </div>
+          <div class="content-cell">
+            <b>05</b>
+            <span>Insurance and flood</span>
+            <p>Zone considerations for water-adjacent lots, and how that lands on your carrying cost.</p>
+          </div>
+          <div class="content-cell">
+            <b>06</b>
+            <span>What's for sale</span>
+            <p>A current list of active homes in both communities, refreshed when you request it.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-shell rise" id="formShell">
+        <div class="form-live">
+          <h3>Send me the guide</h3>
+          <p class="sub">Takes about twenty seconds. We send the PDF straight to your inbox.</p>
+
+          <form id="leadForm" novalidate>
+            <input type="hidden" name="lead_source" value="man-o-war-pine-lakes-landing">
+            <input type="hidden" name="team" value="coastal-life-team">
+
+            <div class="field-row">
+              <div class="field">
+                <label for="first">First name</label>
+                <input id="first" name="first_name" type="text" autocomplete="given-name" required>
+              </div>
+              <div class="field">
+                <label for="last">Last name</label>
+                <input id="last" name="last_name" type="text" autocomplete="family-name" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+
+            <div class="field">
+              <label for="community">Which one are you looking at</label>
+              <select id="community" name="community" required>
+                <option value="">Choose one</option>
+                <option value="Pine Lakes">Pine Lakes</option>
+                <option value="Man O' War">Man O' War</option>
+                <option value="Both">Both, still deciding</option>
+                <option value="Open">Open to other golf communities</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="timeline">When would you buy</label>
+              <select id="timeline" name="timeline" required>
+                <option value="">Choose one</option>
+                <option value="0-3 months">In the next 3 months</option>
+                <option value="3-6 months">3 to 6 months</option>
+                <option value="6-12 months">6 to 12 months</option>
+                <option value="Researching">Just researching for now</option>
+              </select>
+            </div>
+
+            <!-- honeypot, hidden from people, catches bots -->
+            <div style="position:absolute;left:-9999px" aria-hidden="true">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <button class="btn" type="submit" id="submitBtn">Send me the guide</button>
+            <p class="err" id="formErr"></p>
+
+            <p class="consent">
+              By submitting, you agree that The Coastal Life Team at Coldwell Banker Sea Coast
+              Advantage may contact you by phone, text, or email about your request, including
+              by automated means. Consent is not a condition of purchase. Message and data rates
+              may apply. Reply STOP to opt out at any time.
+            </p>
+          </form>
+        </div>
+
+        <div class="thanks" id="thanks">
+          <div class="mark">&#10003;</div>
+          <h3>Guide is on its way</h3>
+          <p class="sub" style="margin-top:10px;">
+            Check your inbox in the next few minutes. If it hasn't landed, look in promotions
+            or spam, then call us and we'll send it again.
+          </p>
+          <a class="btn btn--gold" href="#" data-tel-btn style="width:auto;">Call the team</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <b>The Coastal Life Team of Myrtle Beach</b>
+        <span>Coldwell Banker Sea Coast Advantage</span>
+      </div>
+      <div style="text-align:right;">
+        <a href="#" data-tel></a><br>
+        <a href="#" data-email></a>
+      </div>
+    </div>
+
+    <div class="legal">
+      <p>
+        <span class="eho">&#8962; Equal Housing Opportunity</span>
+      </p>
+      <p>
+        Man O' War Golf Club and Pine Lakes Country Club are independently owned and operated
+        golf facilities. Neither is affiliated with, endorsed by, or sponsored by Coldwell Banker
+        Sea Coast Advantage or The Coastal Life Team. Course access, rates, membership, and
+        amenities are set by each club and are subject to change.
+      </p>
+      <p>
+        Information on property, pricing, HOA dues, and community features is deemed reliable but
+        is not guaranteed and should be independently verified. Nothing here is an offer to sell
+        or a solicitation of an offer to buy where prohibited. Not intended to solicit properties
+        already listed with another brokerage.
+      </p>
+      <p>&copy; <span id="yr"></span> Coldwell Banker Sea Coast Advantage. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FILM MODAL ============ -->
+<div class="modal" id="filmModal" role="dialog" aria-modal="true" aria-label="Man O' War promotional film">
+  <div class="modal-inner">
+    <button class="modal-close" id="closeFilm" type="button">Close</button>
+    <video id="film" controls playsinline preload="none" poster="img/poster.jpg">
+      <source src="man-o-war-film.mp4" type="video/mp4">
+      Your browser can't play this video.
+    </video>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var CFG = window.CLT_CONFIG || {};
+
+  /* ---- contact details injected from config ---- */
+  document.getElementById("yr").textContent = new Date().getFullYear();
+  Array.prototype.forEach.call(document.querySelectorAll("[data-tel],[data-tel-btn]"), function(el){
+    el.href = "tel:" + (CFG.phoneHref || "");
+    if (el.hasAttribute("data-tel") && !el.textContent.trim()) el.textContent = CFG.phone || "";
+    if (el.hasAttribute("data-tel") && el.classList.contains("masthead-tel")) el.textContent = CFG.phone || "";
+  });
+  Array.prototype.forEach.call(document.querySelectorAll("[data-email]"), function(el){
+    el.href = "mailto:" + (CFG.email || ""); el.textContent = CFG.email || "";
+  });
+
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---- hero loop ----
+     Desktop gets the 11MB cut, phones get the 4.5MB cut, data-saver and
+     reduced-motion get neither and just see the poster. Same adaptive
+     pattern the other community pages use. */
+  var ambient = document.getElementById("ambient");
+  var conn = navigator.connection || {};
+  var skip = reduced || conn.saveData || /^(2g|slow-2g)$/.test(conn.effectiveType || "");
+
+  if (ambient && !skip) {
+    ambient.src = window.matchMedia("(max-width: 768px)").matches
+      ? "man-o-war-hero-mobile.mp4"
+      : "man-o-war-hero.mp4";
+    ambient.preload = "auto";
+
+    var tryPlay = function(){ var p = ambient.play(); if (p) p.catch(function(){}); };
+    tryPlay();
+    document.addEventListener("visibilitychange", function(){ if (!document.hidden) tryPlay(); });
+    ["touchstart","click","scroll"].forEach(function(ev){
+      document.addEventListener(ev, function once(){ tryPlay(); document.removeEventListener(ev, once); }, { passive:true });
+    });
+  }
+
+  /* ---- film modal ---- */
+  var modal = document.getElementById("filmModal");
+  var film  = document.getElementById("film");
+  var lastFocus = null;
+
+  function openFilm(){
+    lastFocus = document.activeElement;
+    modal.classList.add("open");
+    document.body.style.overflow = "hidden";
+    if (ambient) ambient.pause();
+    film.play().catch(function(){});
+    document.getElementById("closeFilm").focus();
+  }
+  function closeFilm(){
+    modal.classList.remove("open");
+    document.body.style.overflow = "";
+    film.pause();
+    if (ambient && !reduced) ambient.play().catch(function(){});
+    if (lastFocus) lastFocus.focus();
+  }
+  document.getElementById("playFilm").addEventListener("click", openFilm);
+  document.getElementById("closeFilm").addEventListener("click", closeFilm);
+  modal.addEventListener("click", function(e){ if (e.target === modal) closeFilm(); });
+  document.addEventListener("keydown", function(e){
+    if (e.key === "Escape" && modal.classList.contains("open")) closeFilm();
+  });
+
+  /* ---- scroll reveal ---- */
+  var rises = document.querySelectorAll(".rise");
+  if ("IntersectionObserver" in window && !reduced) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+    Array.prototype.forEach.call(rises, function(el, i){
+      el.style.transitionDelay = (Math.min(i, 4) * 70) + "ms";
+      io.observe(el);
+    });
+  } else {
+    Array.prototype.forEach.call(rises, function(el){ el.classList.add("in"); });
+  }
+
+  /* ---- attribution: hold onto where the lead came from ---- */
+  function attribution(){
+    var q = new URLSearchParams(window.location.search);
+    var out = { page: window.location.href, referrer: document.referrer || "direct" };
+    ["utm_source","utm_medium","utm_campaign","utm_content","utm_term","gclid","fbclid"].forEach(function(k){
+      if (q.get(k)) out[k] = q.get(k);
+    });
+    return out;
+  }
+
+  /* ---- form ---- */
+  var form   = document.getElementById("leadForm");
+  var errBox = document.getElementById("formErr");
+  var btn    = document.getElementById("submitBtn");
+  var shell  = document.getElementById("formShell");
+
+  function fail(msg){ errBox.textContent = msg; errBox.classList.add("show"); }
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    errBox.classList.remove("show");
+
+    if (document.getElementById("company").value) return;           // bot
+
+    var data = {};
+    new FormData(form).forEach(function(v,k){ data[k] = String(v).trim(); });
+    delete data.company;
+
+    if (!data.first_name || !data.last_name) return fail("Add your first and last name.");
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(data.email)) return fail("That email address doesn't look right.");
+    if (data.phone.replace(/\D/g,"").length < 10) return fail("Add a 10-digit phone number so we can reach you.");
+    if (!data.community) return fail("Pick which community you're looking at.");
+    if (!data.timeline)  return fail("Pick a rough timeline.");
+
+    Object.assign(data, attribution());
+    data.submitted_at = new Date().toISOString();
+
+    btn.disabled = true;
+    btn.textContent = "Sending…";
+
+    if (CFG.live === false || /PASTE_/.test(CFG.leadEndpoint)) {
+      console.log("[test mode] lead payload:", data);
+      shell.classList.add("is-sent");
+      document.getElementById("thanks").classList.add("show");
+      return;
+    }
+
+    /* Zapier catch hooks send no CORS headers, so this goes out as a
+       form-encoded no-cors POST. The response is opaque by design —
+       there is no status to inspect, so a completed request is success. */
+    var body = new URLSearchParams();
+    Object.keys(data).forEach(function(k){ body.append(k, data[k]); });
+
+    fetch(CFG.leadEndpoint, { method: "POST", mode: "no-cors", body: body })
+    .then(function(){
+      shell.classList.add("is-sent");
+      document.getElementById("thanks").classList.add("show");
+      if (window.dataLayer) window.dataLayer.push({ event:"lead_submit", form:"golf_guide", community:data.community });
+    })
+    .catch(function(){
+      btn.disabled = false;
+      btn.textContent = "Send me the guide";
+      fail("That didn't go through. Call us at " + (CFG.phone||"") + " and we'll send the guide directly.");
+    });
+  });
+})();
+</script>
+</body>
+</html>
