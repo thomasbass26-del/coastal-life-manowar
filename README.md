@@ -9,12 +9,23 @@ index.html
 CNAME                        <- create this, one line, your domain
 robots.txt
 sitemap.xml
-man-o-war-hero.mp4      11 MB   desktop hero loop, muted
-man-o-war-hero-mobile.mp4 4.5 MB mobile hero loop, muted
-man-o-war-film.mp4      25 MB   full film with audio, plays on click
-img/poster.jpg                  hero still
+aerial-hero.mp4         2.1 MB  hero loop, aerial only, muted, 13.6s
+aerial-hero-mobile.mp4  716 KB  mobile hero loop
+man-o-war-film.mp4       24 MB  full team film with audio, in its own section
+img/poster.jpg                  aerial hero still
 img/og.jpg                      social share image
 ```
+
+## Page structure
+
+Hero is aerial drone footage only — silent, looping, 13.6s. Browsers block
+autoplaying video with sound, so any hero that plays on load has to be muted;
+the audio track is stripped entirely, which is why it's 2.1 MB instead of 10.
+
+The full film with the team talking sits in its own section further down
+(`#film`), with controls and sound. The hero's "Watch the film" button scrolls
+there rather than opening an overlay. The hero loop pauses while the film plays
+and resumes when it stops.
 
 ## Two placeholders to fill before this works
 
@@ -68,8 +79,7 @@ be served to visitors — nobody streams 50 Mbps, and Dropbox share links are
 bandwidth-capped, so the video would silently die once the page got traffic.
 
 The three files here are re-encodes: same footage, `faststart` enabled so playback
-starts before the file finishes downloading. Hero sizes match the pattern already
-used on the other CBSCA community pages (7–11 MB desktop, 4–5 MB mobile).
+starts before the file finishes downloading. The hero is a four-shot aerial cut assembled from the master, crossfaded.
 
 **Keep the 4K master somewhere safe.** It's the archive copy for future cuts, ads,
 and MLS video.
@@ -81,9 +91,9 @@ meant to serve as a CDN or for primarily-video sites. Rough math per visitor:
 
 | | Downloads |
 |---|---|
-| Desktop visitor | ~11 MB |
-| Mobile visitor | ~4.5 MB |
-| Anyone who clicks *Watch the film* | +25 MB |
+| Desktop visitor | ~2.4 MB |
+| Mobile visitor | ~1 MB |
+| Anyone who plays the film | +24 MB |
 
 A few thousand visits a month is fine. If this becomes a paid-traffic page, move
 the three mp4s to Cloudflare R2 (free egress) or Bunny and point the `src` values
