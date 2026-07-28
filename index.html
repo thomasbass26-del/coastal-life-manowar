@@ -30,6 +30,12 @@ window.CLT_CONFIG = {
   leadSource: "man-o-war-pine-lakes-landing",
   team:       "coastal-life-team",
 
+  // IDX + market report shortlinks. MUST be the Coastal Life Team's own Real Geeks
+  // links. Do NOT reuse myschome.coastalscliving.com — that is another team's instance
+  // and registrations there would land in their CRM, not yours.
+  homesUrl:  "PASTE_COASTAL_LIFE_HOMES_LINK",
+  marketUrl: "PASTE_COASTAL_LIFE_MARKET_LINK",
+
   // Team contact — REPLACE BEFORE LAUNCH
   phone:      "843-555-0100",
   phoneHref:  "+18435550100",
@@ -292,6 +298,10 @@ p{ margin:0 0 1.1em; }
 .film-frame{ border:1px solid var(--hair); background:#000; line-height:0; }
 .film-frame video{ width:100%; height:auto; display:block; }
 
+/* ---------- CTA stack ---------- */
+.cta-stack{ display:flex; flex-wrap:wrap; gap:14px; }
+.cta-stack .btn{ flex:0 1 auto; }
+
 /* ---------- Team ---------- */
 .team{
   display:grid; grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);
@@ -366,7 +376,7 @@ p{ margin:0 0 1.1em; }
       </p>
 
       <div class="hero-cta rise">
-        <a class="btn btn--gold" href="#guide">Get the guide</a>
+        <a class="btn btn--gold" data-homes href="#" target="_blank" rel="noopener">See available homes</a>
         <a class="btn btn--ghost" href="#film">Watch the film &middot; 1:20</a>
       </div>
     </div>
@@ -521,16 +531,16 @@ p{ margin:0 0 1.1em; }
         <h2>The Coastal Life Team</h2>
         <p>
           Three agents at Coldwell Banker Sea Coast Advantage, working the Grand Strand
-          from Conway out to the coast. When you request the guide, one of us sends it and
-          answers whatever you ask next. It doesn't route to a call center, and your
-          information doesn't get sold on as a lead.
+          from Conway out to the coast. When you send a request, one of us answers it
+          personally. It doesn't route to a call center, and your information doesn't
+          get sold on as a lead.
         </p>
         <ul class="asks">
           <li>Golf-community specialists across Myrtle Beach and Conway</li>
           <li>We'll walk a specific lot with you before you write an offer</li>
           <li>Straight answers on HOA, flood zones, and what a view premium is really worth</li>
         </ul>
-        <a class="btn btn--gold" href="#guide">Get the guide</a>
+        <a class="btn btn--gold" href="#guide">Request community info</a>
       </div>
     </div>
   </div>
@@ -542,45 +552,24 @@ p{ margin:0 0 1.1em; }
     <div class="offer">
 
       <div class="rise">
-        <p class="plate">The guide</p>
-        <h2>What's inside</h2>
-        <p class="lede" style="margin:20px 0 34px;">
-          A short PDF, written for buyers, not for search engines. No account, no drip
-          sequence you can't leave.
+        <p class="plate">Start looking</p>
+        <h2>See what's for sale</h2>
+        <p class="lede" style="margin:20px 0 30px;">
+          Live MLS listings, updated continuously, and a market report showing what
+          Man O' War homes have actually been selling for &mdash; not estimates.
         </p>
 
-        <div class="contents">
-          <div class="content-cell">
-            <b>01</b>
-            <span>Price bands</span>
-            <p>Current ranges by home size and lot type, and how the spread between them has been moving.</p>
-          </div>
-          <div class="content-cell">
-            <b>02</b>
-            <span>HOA and fees</span>
-            <p>What is covered, what is not, and the questions to ask before you write an offer.</p>
-          </div>
-          <div class="content-cell">
-            <b>03</b>
-            <span>Course access</span>
-            <p>How play, rates, and any membership actually work, since Man O' War is a public daily-fee course.</p>
-          </div>
-          <div class="content-cell">
-            <b>04</b>
-            <span>The view premium</span>
-            <p>What a fairway lot, a lake lot, and an interior lot have been worth relative to each other.</p>
-          </div>
-          <div class="content-cell">
-            <b>05</b>
-            <span>Insurance and flood</span>
-            <p>Zone considerations for water-adjacent lots, and how that lands on your carrying cost.</p>
-          </div>
-          <div class="content-cell">
-            <b>06</b>
-            <span>What's for sale</span>
-            <p>A current list of active homes on and around the course, refreshed when you request it.</p>
-          </div>
+        <div class="cta-stack">
+          <a class="btn btn--gold" data-homes href="#" target="_blank" rel="noopener">See available homes</a>
+          <a class="btn btn--ghost" data-market href="#" target="_blank" rel="noopener">View the market report</a>
         </div>
+
+        <ul class="asks" style="margin-top:34px;">
+          <li>Every active listing on and around the course, straight from the MLS</li>
+          <li>Sold prices and days on market, so you can see the real number</li>
+          <li>Save a search and new listings come to you as they hit</li>
+          <li>Or use the form and we'll pull it together and send it over</li>
+        </ul>
       </div>
 
       <div class="form-shell rise" id="formShell">
@@ -588,11 +577,11 @@ p{ margin:0 0 1.1em; }
           <img class="form-logo" src="img/logo-full.png" width="440" height="452"
                loading="lazy" decoding="async"
                alt="Coastal Life Team, Coldwell Banker Sea Coast Advantage">
-          <h3>Send me the guide</h3>
-          <p class="sub">Takes about twenty seconds. We send the PDF straight to your inbox.</p>
+          <h3>Request community info</h3>
+          <p class="sub">Takes about twenty seconds. Tell us what you're after and we'll send current availability and pricing.</p>
 
           <form id="leadForm" novalidate>
-            <input type="hidden" name="lead_source" value="man-o-war-pine-lakes-landing">
+            <input type="hidden" name="lead_source" value="man-o-war-landing">
             <input type="hidden" name="team" value="coastal-life-team">
 
             <div class="field-row">
@@ -644,7 +633,7 @@ p{ margin:0 0 1.1em; }
               <input id="company" name="company" type="text" tabindex="-1" autocomplete="off">
             </div>
 
-            <button class="btn" type="submit" id="submitBtn">Send me the guide</button>
+            <button class="btn" type="submit" id="submitBtn">Send my request</button>
             <p class="err" id="formErr"></p>
 
             <p class="consent">
@@ -658,11 +647,13 @@ p{ margin:0 0 1.1em; }
 
         <div class="thanks" id="thanks">
           <div class="mark">&#10003;</div>
-          <h3>Guide is on its way</h3>
+          <h3>Request received</h3>
           <p class="sub" style="margin-top:10px;">
-            Check your inbox in the next few minutes. If it hasn't landed, look in promotions
-            or spam, then call us and we'll send it again.
+            One of us will be in touch shortly with current availability and pricing. In the
+            meantime you can browse every active listing yourself.
           </p>
+          <a class="btn btn--gold" data-homes href="#" target="_blank" rel="noopener"
+             style="width:auto;margin-bottom:10px;">See available homes</a>
           <a class="btn btn--gold" href="#" data-tel-btn style="width:auto;">Call the team</a>
         </div>
       </div>
@@ -719,6 +710,14 @@ p{ margin:0 0 1.1em; }
     el.href = "tel:" + (CFG.phoneHref || "");
     if (el.hasAttribute("data-tel") && !el.textContent.trim()) el.textContent = CFG.phone || "";
     if (el.hasAttribute("data-tel") && el.classList.contains("masthead-tel")) el.textContent = CFG.phone || "";
+  });
+  Array.prototype.forEach.call(document.querySelectorAll("[data-homes]"), function(el){
+    if (CFG.homesUrl && !/PASTE_/.test(CFG.homesUrl)) { el.href = CFG.homesUrl; }
+    else { el.setAttribute("aria-disabled","true"); el.title = "IDX link not configured yet"; }
+  });
+  Array.prototype.forEach.call(document.querySelectorAll("[data-market]"), function(el){
+    if (CFG.marketUrl && !/PASTE_/.test(CFG.marketUrl)) { el.href = CFG.marketUrl; }
+    else { el.setAttribute("aria-disabled","true"); el.title = "Market report link not configured yet"; }
   });
   Array.prototype.forEach.call(document.querySelectorAll("[data-email]"), function(el){
     el.href = "mailto:" + (CFG.email || ""); el.textContent = CFG.email || "";
@@ -833,8 +832,8 @@ p{ margin:0 0 1.1em; }
     })
     .catch(function(){
       btn.disabled = false;
-      btn.textContent = "Send me the guide";
-      fail("That didn't go through. Call us at " + (CFG.phone||"") + " and we'll send the guide directly.");
+      btn.textContent = "Send my request";
+      fail("That didn't go through. Call us at " + (CFG.phone||"") + " and we'll get you what you need directly.");
     });
   });
 })();
