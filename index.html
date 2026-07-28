@@ -113,6 +113,10 @@ p{ margin:0 0 1.1em; }
 .btn--gold{ background:var(--gold); color:var(--deep); }
 .btn--gold:hover{ background:var(--gold-soft); transform:translateY(-1px); }
 .btn--ghost{ border-color:rgba(255,255,255,.34); color:#fff; background:transparent; }
+/* long labels shouldn't overflow the gutter on narrow phones */
+@media (max-width:420px){
+  .btn{ padding:15px 20px; font-size:13px; letter-spacing:.04em; }
+}
 .btn--ghost:hover{ border-color:var(--gold); color:var(--gold-soft); }
 
 /* ---------- Masthead ---------- */
@@ -377,7 +381,7 @@ p{ margin:0 0 1.1em; }
 
       <div class="hero-cta rise">
         <a class="btn btn--gold" data-homes href="#" target="_blank" rel="noopener">See available homes</a>
-        <a class="btn btn--ghost" href="#film">Watch the film &middot; 1:20</a>
+        <a class="btn btn--ghost" href="#film">Come walk the course with us</a>
       </div>
     </div>
   </div>
