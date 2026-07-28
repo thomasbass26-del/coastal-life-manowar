@@ -115,11 +115,13 @@ p{ margin:0 0 1.1em; }
   display:flex; align-items:center;
 }
 .masthead .wrap{ display:flex; align-items:center; justify-content:space-between; gap:20px; }
-.lockup{ display:flex; flex-direction:column; gap:4px; text-decoration:none; }
-.lockup b{
+.lockup{ display:flex; align-items:center; gap:13px; text-decoration:none; }
+.lockup-mark{ height:38px; width:auto; display:block; flex:0 0 auto; }
+.lockup-text{ display:flex; flex-direction:column; gap:4px; }
+.lockup-text b{
   font-family:var(--display); font-size:19px; font-weight:700; letter-spacing:.005em;
 }
-.lockup span{
+.lockup-text span{
   font-family:var(--data); font-size:9.5px; letter-spacing:.2em;
   text-transform:uppercase; color:var(--gold);
 }
@@ -290,6 +292,20 @@ p{ margin:0 0 1.1em; }
 .film-frame{ border:1px solid var(--hair); background:#000; line-height:0; }
 .film-frame video{ width:100%; height:auto; display:block; }
 
+/* ---------- Team ---------- */
+.team{
+  display:grid; grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);
+  gap:clamp(28px,4vw,58px); align-items:center;
+}
+@media (max-width:860px){ .team{ grid-template-columns:1fr; } }
+.team-photo{ margin:0; border:1px solid var(--hair); background:#0A1428; line-height:0; }
+.team-photo img{ width:100%; height:auto; display:block; }
+.team-copy h2{ margin-bottom:18px; }
+.team-copy p{ color:var(--mist); }
+.team-copy .btn{ margin-top:28px; }
+.form-logo{ display:block; width:148px; height:auto; margin:0 0 22px; }
+.foot-mark{ height:34px; width:auto; display:block; margin-bottom:14px; }
+
 /* ---------- Footer ---------- */
 .foot{ background:var(--deeper); border-top:1px solid var(--hair); padding-block:52px; font-size:13px; color:rgba(255,255,255,.5); }
 .foot-top{ display:flex; flex-wrap:wrap; gap:26px; justify-content:space-between; align-items:flex-start; margin-bottom:32px; }
@@ -318,8 +334,11 @@ p{ margin:0 0 1.1em; }
   <div class="wrap">
     <!-- Swap this text lockup for the official CB Sea Coast Advantage logo file when you have it. -->
     <a class="lockup" href="#top">
-      <b>The Coastal Life Team</b>
-      <span>Coldwell Banker Sea Coast Advantage</span>
+      <img class="lockup-mark" src="img/logo-mark.png" alt="" aria-hidden="true" width="130" height="96">
+      <span class="lockup-text">
+        <b>The Coastal Life Team</b>
+        <span>Coldwell Banker Sea Coast Advantage</span>
+      </span>
     </a>
     <a class="masthead-tel" href="#" data-tel>Call</a>
   </div>
@@ -488,6 +507,35 @@ p{ margin:0 0 1.1em; }
   </div>
 </section>
 
+<!-- ============ TEAM ============ -->
+<section class="sec" id="team">
+  <div class="wrap">
+    <div class="team">
+      <figure class="team-photo rise">
+        <img src="img/team.jpg" width="1120" height="1400" loading="lazy" decoding="async"
+             alt="The Coastal Life Team of Myrtle Beach at Coldwell Banker Sea Coast Advantage">
+      </figure>
+
+      <div class="team-copy rise">
+        <p class="plate">Who you'd be working with</p>
+        <h2>The Coastal Life Team</h2>
+        <p>
+          Three agents at Coldwell Banker Sea Coast Advantage, working the Grand Strand
+          from Conway out to the coast. When you request the guide, one of us sends it and
+          answers whatever you ask next. It doesn't route to a call center, and your
+          information doesn't get sold on as a lead.
+        </p>
+        <ul class="asks">
+          <li>Golf-community specialists across Myrtle Beach and Conway</li>
+          <li>We'll walk a specific lot with you before you write an offer</li>
+          <li>Straight answers on HOA, flood zones, and what a view premium is really worth</li>
+        </ul>
+        <a class="btn btn--gold" href="#guide">Get the guide</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ GUIDE + FORM ============ -->
 <section class="sec sec--deep" id="guide">
   <div class="wrap">
@@ -537,6 +585,9 @@ p{ margin:0 0 1.1em; }
 
       <div class="form-shell rise" id="formShell">
         <div class="form-live">
+          <img class="form-logo" src="img/logo-full.png" width="440" height="452"
+               loading="lazy" decoding="async"
+               alt="Coastal Life Team, Coldwell Banker Sea Coast Advantage">
           <h3>Send me the guide</h3>
           <p class="sub">Takes about twenty seconds. We send the PDF straight to your inbox.</p>
 
@@ -625,6 +676,7 @@ p{ margin:0 0 1.1em; }
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-brand">
+        <img class="foot-mark" src="img/logo-mark.png" alt="" aria-hidden="true" width="130" height="96">
         <b>The Coastal Life Team of Myrtle Beach</b>
         <span>Coldwell Banker Sea Coast Advantage</span>
       </div>
